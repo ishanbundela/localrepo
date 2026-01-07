@@ -1,0 +1,40 @@
+1. git clone: <line of repo> (cloning the repo. on our local machine)
+2. git status: (display the status of the code like the files are added or commited and all.)
+3. files:
+   untracked: new file that git doesn't yet track.
+   modified: chnaged.
+   staged: file is  ready  to commited.
+   unmodified: unchanged
+4. git add : <file name>(adds new or changed files in your working directory to the git staging area.)
+5. git add . : (add all new or changed files)
+6. git commit -m "some msg" : (we have o commit the added files in repo.)
+7. git push origin main : (upload local repo content on remote repo.)
+   (remote repo: means repo on git hub)
+8. cd <name of folder> : (change directory)
+9. cd .. : (directory se bahar aane ke liye)
+10. mkdir <name of directory> : (we can make directory.)
+11. when we make repo. using mkdir we have to use make that repo a git repo so we use
+    git init : 
+12. now we have to upload the local repo which is in our sys. to github. using
+    git remote add origin <link of repo which we made on github>
+13. git remote -v : (to verify remote(github repo.))
+14. git branch : (to check branch)
+15. git branch -M <new name> : (to rename branch)
+16. git push -u origin main : (isse jab bhi aage git push likhenge tho vo automattically main me jayega.)
+17. git checkout <branch name> : (use to go from one branch to another.)
+18. git checkout -b <branch name> : (to create new branch and switch to that branch.)
+19. git checkout -d <branch name> : (to delete branch.)
+20. git diff <branch2>(which is other than where we are) : (to compare commit, branches, files, and more.)
+21. git merge <branch name> : (to merge changes from one branch into another.)
+22. git pull origin main : (to fetch and download content from remote repo and immediately update the local repo to match that content.)
+23. undoing changes
+    A. staged changes: (added to staging area using git add)
+    1. git reset <file name> : (unstage the file while retaining the changes in working directory.)
+    2. git reset : (unstage or reset all files.)
+    B. committed changes: for one commit (changes that have been committed to local repo)
+    1. git reset head~1 : (undo the last commit but keep the changes in working directory.)
+    C.commited changes: for multiple commits
+    1.git reset <commit head id> : (undoes all commits after the specified commit and keeps changes in working directory.)
+    1. git reset --hard <commit head id> : (undoes all commits after the specified commit and discards changes in working directory.)
+24. git log : (to see the commit history.)
+25. 
